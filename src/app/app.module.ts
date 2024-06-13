@@ -9,6 +9,8 @@ import { LoginComponent } from './Common/login/login.component';
 import { OTPVerifyComponent } from './Common/otpverify/otpverify.component';
 import { AddSecurityQuestionsComponent } from './Common/add-security-questions/add-security-questions.component';
 import { ProductMappingStractureComponent } from './Common/product-mapping-stracture/product-mapping-stracture.component';
+import { AuditHeadDeshboardComponent } from './Common/Dashboard/audit-head-deshboard/audit-head-deshboard.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ProductMappingStractureComponent } from './Common/product-mapping-strac
     LoginComponent,
     OTPVerifyComponent,
     AddSecurityQuestionsComponent,
-    ProductMappingStractureComponent
+    ProductMappingStractureComponent,
+    AuditHeadDeshboardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
