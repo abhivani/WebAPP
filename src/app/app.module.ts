@@ -11,6 +11,8 @@ import { AddSecurityQuestionsComponent } from './Common/add-security-questions/a
 import { ProductMappingStractureComponent } from './Common/product-mapping-stracture/product-mapping-stracture.component';
 import { AuditHeadDeshboardComponent } from './Common/Dashboard/audit-head-deshboard/audit-head-deshboard.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
 
 @NgModule({
   declarations: [
@@ -22,14 +24,15 @@ import { FooterComponent } from './shared/footer/footer.component';
     AddSecurityQuestionsComponent,
     ProductMappingStractureComponent,
     AuditHeadDeshboardComponent,
-    FooterComponent
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [
-    provideClientHydration()
+    provideClientHydration(),
+    provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]
 })
